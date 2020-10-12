@@ -1,0 +1,16 @@
+{
+  "name": "mongo-collection-analyzer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^26.5.3"
+  },
+  "dependencies": {
+    "mongodb": "^3.6.2",
+    "yargs": "^16.0.3"
+  }
+}

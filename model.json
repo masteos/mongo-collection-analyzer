@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "id1",
+    "keyNumberBoolRequired": 0,
+    "objectRequired": {
+      "objectKeyString": "something",
+      "objectKeyArray": [
+        "hello",
+        "world",
+        {
+          "wrongData": "test"
+        }
+      ]
+    },
+    "arrayNumberNotRequired": [0, 1, 2, 3, 4]
+  },
+  {
+    "_id": "id2",
+    "keyNumberBoolRequired": true,
+    "objectRequired": {
+      "objectKeyString": "somethingElse"
+    }
+  },
+  {
+    "_id": "id3",
+    "keyNumberBoolRequired": 20,
+    "objectRequired": {
+      "objectKeyString": "somethingElse",
+      "someOtherObjectKeyArray": [
+        { "with": "data", "and": "more_data" },
+        { "with": "toto", "and": "more_toto" }
+      ]
+    },
+    "arrayNumberNotRequired": [1, 2, 32.3, 6]
+  }
+]
