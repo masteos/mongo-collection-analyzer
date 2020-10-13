@@ -1,4 +1,4 @@
-const getPercent = (val, total) => Math.round((val / total) * 100);
+const getPercent = (val, total) => ((val / total) * 100).toString().slice(0, 5);
 
 const analyze = (schema, total) => {
   const obj = {};
