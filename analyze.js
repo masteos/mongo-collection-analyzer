@@ -10,6 +10,7 @@ const analyze = (schema, total) => {
       const value = el[type];
       const required = value === (total || value);
       obj[key] = {
+        ...obj[key],
         [type]: {
           required,
           stats: required ? value : `${el[type]}: (${getPercent(el[type], total)}%) of ${total}`,

@@ -1,3 +1,5 @@
+const mongoose = require('mongoose')
+
 const getType = val => {
   if (Array.isArray(val)) {
     return 'array';
@@ -9,6 +11,10 @@ const getType = val => {
 
   if (val instanceof Date) {
     return 'date';
+  }
+
+  if (val instanceof mongoose.Types.ObjectId) {
+    return 'objectId';
   }
 
   return typeof val;
